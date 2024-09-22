@@ -6,6 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      #navPanelToggle {
+				display: none;
+			}
+    </style>
 	</head>
 	<body class="is-preload">
 
@@ -18,22 +23,23 @@
 					</header>
 
 				<!-- Nav -->
-					<nav id="nav">
+					<!-- <nav id="nav">
 						<ul class="links">
-							<li><a href="index.html">Homepage</a></li>
+							<li><a href="index.html">Homepagee</a></li>
 						</ul>
-					</nav>
+					</nav> -->
 
 
 				<!-- Footer -->
         <footer id="footer">
           <section>
             <h2 id="contact-el">Contact me</h1>
-            <form method="post" action="#">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="32a0a65c-cfc3-41cc-96c8-20259ebc4feb">
               <div class="fields">
                 <div class="field">
                   <label for="name">Name</label>
-                  <input type="text" name="name" id="name" />
+                  <input type="text" name="name" id="name" class="contact-inputs "/>
                 </div>
                 <div class="field">
                   <label for="email">Email</label>
@@ -44,9 +50,12 @@
                   <textarea name="message" id="message" rows="3" required></textarea>
                 </div>
               </div>
+            <div class="h-captcha"
+            data-captcha="true"></div>
               <ul class="actions">
                 <li><input type="submit" value="Send Message" /></li>
               </ul>
+
             </form>
           </section>
         </footer>
@@ -66,6 +75,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+      <script src="https://web3forms.com/client/script.js" async defer></script>
+      <script>
+        const form = document.getElementById('YOUR_FORM_ID');
+
+        form.addEventListener('submit', function(e) {
+
+            const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+            if (!hCaptcha) {
+                e.preventDefault();
+                alert("Please fill out captcha field")
+                return
+            }
+        });
+        </script>
 
 	</body>
 </html>
