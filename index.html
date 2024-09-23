@@ -12,8 +12,20 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
+
+      #wrapper,#intro
+  {
+        background: #ffb98f;
+
+      }
+
+      body{
+
+      }
+
       .inner-topic{
-        color: #dfdfdf;
+
+        color: #000;
       }
       .topic-heading{
         font-size: 1.3rem;
@@ -21,11 +33,15 @@
         word-spacing: 0.1rem;
         text-shadow: 1px 2px 1px grey;
         background: #252222;
+        color: #fff;
+
+        /* background: #efb147; */
       }
       .topic-para{
         font-size: 1rem;
         font-weight:400;
         margin-bottom: 2rem;
+        color: #000;
       }
       .navigation-d{
         background: rgb(34, 34, 37);
@@ -38,6 +54,24 @@
         font-size: 1.2rem;
       }
       #fresh-start{
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px #000;
+        text-wrap: wrap;
+      }
+
+      .social-heading{
+        background: #2f2b2b;
+        width: 100%;
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+      .d-contact-details a:hover{
+        color: #503434;
+      }
+      .aasa{
+        color: black;
+        padding-right: 1rem;
         font-size: 1.3rem;
       }
 
@@ -47,6 +81,13 @@
       #navPanelToggle {
 				display: none;
 			}
+      #footer{
+        background: #1D232A;
+      }
+      .d-footer * {
+
+      }
+
 
 
     </style>
@@ -198,10 +239,16 @@
                   well-being and prosperity of Coolart Ward.</div>
 
               </div>
+              <div class="d-footer">
+                <div class="social-heading">Contact Details</div>
+                <div class="d-contact-details" id="phone"><a target="_blank" style="color: #000;" href="tel:0494185351"><i class="aasa fa-solid fa-phone"></i>0494 185 351</a></div>
+                <div class="d-contact-details" id="facebook"><a target="_blank" style="color: #000;" href="https://www.facebook.com/profile.php?id=61564947254855"><i class="aasa fa-brands fa-facebook"></i>Dennice Allen-Breeschoten, Candidate for Coolart Ward</a></div>
+                <div class="d-contact-details" id="gmail"><a target="_blank" style="color: #000;" href="mail:coolartward@gmail.com"><i class="aasa fa-solid fa-envelope"></i>coolartward@gmail.com</a></div>
+              </div>
 
 
 
-<!--
+<!-- target="_blank"
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul> -->
@@ -222,9 +269,9 @@
 					</nav>
 
 
-				<!-- Footer -->
-					<!-- <footer id="footer">
-						<section>
+				<!-- Footer
+					<footer id="footer">
+						<!-- <section>
               <h2 id="contact-el">Contact me</h1>
 							<form method="post" action="#">
 								<div class="fields">
@@ -260,17 +307,18 @@
 								<h3>Email</h3>
 								<p><a href="#">tattoo@gmail.com</a></p>
 							</section>
-							<section>
-								<h3>Social</h3>
+							<section> -->
+								<!-- <h3>Social</h3>
 								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                  <i class="fa-solid fa-phone"></i>
+									<li><a href="#" class="icon brands alt fa-phone "><span class="label">Phone</span>0494 185 351</a></li>
+									<li><a href="https://www.facebook.com/profile.php?id=61564947254855" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span>Dennice Allen-Breeschoten, Candidate for Coolart Ward
+                  </a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Gmail</span>coolartward@gmail.com</a></li>
 								</ul>
 							</section>
 						</section>
-					</footer> -->
+					</footer> --> -->
 
 				<!-- Copyright -->
 					<div id="copyright">
@@ -287,6 +335,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+      <script src="https://kit.fontawesome.com/3141365ad1.js" crossorigin="anonymous"></script>
 
 	</body>
-</html>F
+</html>
